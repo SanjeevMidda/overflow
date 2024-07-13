@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-color: black;
+  flex-direction: column;
+}
+
+.textContainer {
+  width: 220px;
+  height: 35px;
+  overflow: hidden;
+}
+
+.text {
+  animation: move 5s infinite backwards;
+  transform: translateY(-2px);
+}
+
+@keyframes move {
+  50% {
+    transform: translateY(-170px);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
+h1 {
+  font-size: 100px;
+}
